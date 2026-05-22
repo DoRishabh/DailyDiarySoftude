@@ -682,6 +682,292 @@
         <li>Reference: simplemaps.com/custom/us</li>
       </ul>
     </div>
+    
+    <div class="taskBox">
+      <h3>Day 1</h3>
+      <div class="date">1 April 2026</div>
+      <hr />
+      <h4>Task 1 — Custom Shape Map Setup</h4>
+      <ul>
+        <li>Understood the requirement to build a custom US district map instead of using the built-in map visual.</li>
+        <li>Studied the use of <b>TopoJSON / GeoJSON</b> for importing district boundaries into the Shape Map visual.</li>
+        <li>Planned the district-level mapping structure using the values coming from the database tables.</li>
+        <li>Reviewed how tooltips and conditional formatting will be applied to the map.</li>
+      </ul>
+    </div>
+
+    <div class="taskBox">
+      <h3>Day 2</h3>
+      <div class="date">2 April 2026</div>
+      <hr />
+      <h4>Task 1 — Tooltip and Quarter Trend Logic</h4>
+      <ul>
+        <li>Worked on the tooltip design for the hovered district so that detailed data can be shown clearly.</li>
+        <li>Planned the line chart to show the last five quarters with correct sorting.</li>
+        <li>Studied how the selected quarter should control the visible quarter range in the tooltip.</li>
+        <li>Validated the requirement for showing both <b>All Districts</b> and <b>Current District</b> lines.</li>
+      </ul>
+    </div>
+
+    <div class="taskBox">
+      <h3>Day 3</h3>
+      <div class="date">3 April 2026</div>
+      <hr />
+      <h4>Task 1 — Bookmarks and Final Map View</h4>
+      <ul>
+        <li>Completed the planning for bookmarks so both maps can appear on the same page.</li>
+        <li>Reviewed the separate handling for <b>Late Payments</b> and <b>Ratifications</b> maps.</li>
+        <li>Checked that page-level bookmarks should not be used.</li>
+        <li>Finalized the display approach for conditional colors, district values, and QTR labels.</li>
+      </ul>
+    </div>
+
+    <div class="taskBox">
+      <h3>Day 4</h3>
+      <div class="date">6 April 2026</div>
+      <hr />
+      <h4>Task 2 — Star Schema Design</h4>
+      <ul>
+        <li>Studied the Adventure Works dataset and identified the tables needed for a star schema model.</li>
+        <li>Reviewed how to shape fact and dimension tables through transformations and aggregations.</li>
+        <li>Planned the relationship structure for sales, customers, products, and territories.</li>
+        <li>Prepared the model design for analysis by order date and ship date.</li>
+      </ul>
+    </div>
+
+    <div class="taskBox">
+      <h3>Day 5</h3>
+      <div class="date">7 April 2026</div>
+      <hr />
+      <h4>Task 2 — Order Date Analysis</h4>
+      <ul>
+        <li>Worked on the sales overview by the year in which the order was placed.</li>
+        <li>Added the possibility to drill down from year level to month level.</li>
+        <li>Included different product categories in the overview visual.</li>
+        <li>Prepared the same logic for cleaner reporting and drill-down analysis.</li>
+      </ul>
+    </div>
+
+    <div class="taskBox">
+      <h3>Day 6</h3>
+      <div class="date">8 April 2026</div>
+      <hr />
+      <h4>Task 2 — KPI Cards and Ship Date Overview</h4>
+      <ul>
+        <li>Replicated the sales overview for the year in which the order was shipped.</li>
+        <li>Built KPI logic for current MTD, previous MTD, and previous month sales.</li>
+        <li>Planned conditional formatting so the current MTD shows green or red based on comparison.</li>
+        <li>Validated the page structure for business-friendly reporting.</li>
+      </ul>
+    </div>
+
+    <div class="taskBox">
+      <h3>Day 7</h3>
+      <div class="date">9 April 2026</div>
+      <hr />
+      <h4>Task 3 — Dynamic Slicer Logic</h4>
+      <ul>
+        <li>Studied slicer behavior based on the selected program in Power BI.</li>
+        <li>Reviewed how the Month-Quarter slicer must change between Month-Year and Quarter-Year formats.</li>
+        <li>Worked on the different behavior for PEP, SEP, MSEP, DEP, and REP.</li>
+        <li>Prepared the base logic for conditional slicer interaction and filtering.</li>
+      </ul>
+    </div>
+
+    <div class="taskBox">
+      <h3>Day 8</h3>
+      <div class="date">10 April 2026</div>
+      <hr />
+      <h4>Task 3 — Conditional Visibility Rules</h4>
+      <ul>
+        <li>Worked on the Show Quarter slicer visibility logic.</li>
+        <li>Handled the Year selection rules for one-year and two-year scenarios.</li>
+        <li>Validated the Month-Quarter slicer behavior for first two months and the last month of each quarter.</li>
+        <li>Refined the interactive selection behavior for better report usability.</li>
+      </ul>
+    </div>
+
+    <div class="taskBox">
+      <h3>Day 9</h3>
+      <div class="date">13 April 2026</div>
+      <hr />
+      <h4>Task 4 — Year-End Medal Logic</h4>
+      <ul>
+        <li>Studied dealer quarterly performance based on medal values such as Gold, Silver, and Bronze.</li>
+        <li>Understood the rule to compare the last two quarters with the best three quarters.</li>
+        <li>Planned the logic to select the lower medal from the higher scoring combination.</li>
+        <li>Prepared the approach for handling non-scoring values in the calculation.</li>
+      </ul>
+    </div>
+
+    <div class="taskBox">
+      <h3>Day 10</h3>
+      <div class="date">14 April 2026</div>
+      <hr />
+      <h4>Task 4 — Medal Comparison and Validation</h4>
+      <ul>
+        <li>Worked on sample dealer cases to verify the final year-end medal output.</li>
+        <li>Reviewed how the medal hierarchy should behave across different quarter combinations.</li>
+        <li>Checked the examples where Silver becomes the final result after comparison.</li>
+        <li>Documented the logic clearly for implementation in DAX or Power BI calculations.</li>
+      </ul>
+    </div>
+
+    <div class="taskBox">
+      <h3>Day 11</h3>
+      <div class="date">15 April 2026</div>
+      <hr />
+      <h4>Task 4 — Final Rule Review</h4>
+      <ul>
+        <li>Completed the final review of the year-end medal logic.</li>
+        <li>Ensured the rule handles Bronze, Silver, Gold, and non-scoring attributes properly.</li>
+        <li>Verified that the output follows the business requirement for each dealer.</li>
+        <li>Prepared the task for integration into the full report workflow.</li>
+      </ul>
+    </div>
+
+    <div class="taskBox">
+      <h3>Day 12</h3>
+      <div class="date">16 April 2026</div>
+      <hr />
+      <h4>Task 5 — Project Setup and Planning</h4>
+      <ul>
+        <li>Reviewed the AI Q&A tool brief and understood the full end-to-end workflow.</li>
+        <li>Planned the folder structure, required files, and local project setup.</li>
+        <li>Identified the five major components: YML parser, NL2SQL agent, Snowflake executor, FastAPI backend, and HTML UI.</li>
+        <li>Started preparing the implementation plan for the client project.</li>
+      </ul>
+    </div>
+
+    <div class="taskBox">
+      <h3>Day 13</h3>
+      <div class="date">17 April 2026</div>
+      <hr />
+      <h4>Task 5 — YML Schema Understanding</h4>
+      <ul>
+        <li>Studied the Adventure Works YML schema file and the table relationships inside it.</li>
+        <li>Planned how the parser will read tables, columns, and joins from the schema.</li>
+        <li>Reviewed how this schema text will be passed to the AI model for SQL generation.</li>
+        <li><span class="client">Working on Client Project</span> alongside the technical setup and documentation.</li>
+      </ul>
+    </div>
+
+    <div class="taskBox">
+      <h3>Day 14</h3>
+      <div class="date">20 April 2026</div>
+      <hr />
+      <h4>Task 5 — YML Parser Component</h4>
+      <ul>
+        <li>Built the plan for reading the YML file using PyYAML and extracting all table details.</li>
+        <li>Prepared the logic to generate a human-readable schema string for the AI prompt.</li>
+        <li>Validated that all five tables and their join relationships must be captured correctly.</li>
+        <li><span class="client">Working on Client Project</span> with focus on the first implementation component.</li>
+      </ul>
+    </div>
+
+    <div class="taskBox">
+      <h3>Day 15</h3>
+      <div class="date">21 April 2026</div>
+      <hr />
+      <h4>Task 5 — NL2SQL Agent Design</h4>
+      <ul>
+        <li>Worked on prompt design for the LangChain + OpenAI agent.</li>
+        <li>Planned instructions to generate only valid Snowflake SQL with fully qualified names.</li>
+        <li>Reviewed how the AI should respond with SQL only and no extra explanation.</li>
+        <li><span class="client">Working on Client Project</span> during the AI prompt and query generation phase.</li>
+      </ul>
+    </div>
+
+    <div class="taskBox">
+      <h3>Day 16</h3>
+      <div class="date">22 April 2026</div>
+      <hr />
+      <h4>Task 5 — Snowflake Executor</h4>
+      <ul>
+        <li>Planned the Snowflake connection flow using <code>snowflake-connector-python</code>.</li>
+        <li>Prepared query execution and result retrieval into a pandas DataFrame.</li>
+        <li>Reviewed error handling so the app can return friendly messages instead of crashing.</li>
+        <li><span class="client">Working on Client Project</span> while building database execution logic.</li>
+      </ul>
+    </div>
+
+    <div class="taskBox">
+      <h3>Day 17</h3>
+      <div class="date">23 April 2026</div>
+      <hr />
+      <h4>Task 5 — FastAPI Backend</h4>
+      <ul>
+        <li>Worked on the FastAPI structure for wrapping the full AI Q&A flow into one API endpoint.</li>
+        <li>Planned the <code>/query</code> route to receive questions and return SQL plus data.</li>
+        <li>Reviewed the need for CORS so the HTML page can call the API without browser blocking.</li>
+        <li><span class="client">Working on Client Project</span> with backend integration progress.</li>
+      </ul>
+    </div>
+
+    <div class="taskBox">
+      <h3>Day 18</h3>
+      <div class="date">24 April 2026</div>
+      <hr />
+      <h4>Task 5 — HTML UI and Chart.js</h4>
+      <ul>
+        <li>Started the front-end interface with an input box, send button, and result area.</li>
+        <li>Planned the Chart.js bar chart rendering from API response data.</li>
+        <li>Reviewed how SQL output should be displayed below the chart for transparency.</li>
+        <li><span class="client">Working on Client Project</span> while designing the browser experience.</li>
+      </ul>
+    </div>
+
+    <div class="taskBox">
+      <h3>Day 19</h3>
+      <div class="date">27 April 2026</div>
+      <hr />
+      <h4>Task 5 — End-to-End Integration</h4>
+      <ul>
+        <li>Connected the parser, AI agent, executor, and FastAPI flow into one pipeline.</li>
+        <li>Tested the full request journey from user question to SQL and result rows.</li>
+        <li>Reviewed data formatting so the output can be consumed by JSON and Chart.js.</li>
+        <li><span class="client">Working on Client Project</span> during the integration stage.</li>
+      </ul>
+    </div>
+
+    <div class="taskBox">
+      <h3>Day 20</h3>
+      <div class="date">28 April 2026</div>
+      <hr />
+      <h4>Task 5 — Testing and Debugging</h4>
+      <ul>
+        <li>Checked common blockers such as CORS, SQL errors, and incorrect schema references.</li>
+        <li>Ran sample questions to verify that the AI-generated SQL returns meaningful results.</li>
+        <li>Improved the validation flow for input questions and output formatting.</li>
+        <li><span class="client">Working on Client Project</span> while fixing and refining the application.</li>
+      </ul>
+    </div>
+
+    <div class="taskBox">
+      <h3>Day 21</h3>
+      <div class="date">29 April 2026</div>
+      <hr />
+      <h4>Task 5 — Finalization and Demo Preparation</h4>
+      <ul>
+        <li>Prepared the final local demo flow for showing the application to the client.</li>
+        <li>Reviewed the acceptance criteria, including SQL display, chart output, and error handling.</li>
+        <li>Worked on final documentation and clean code structure.</li>
+        <li><span class="client">Working on Client Project</span> with final delivery preparation.</li>
+      </ul>
+    </div>
+
+    <div class="taskBox">
+      <h3>Day 22</h3>
+      <div class="date">30 April 2026</div>
+      <hr />
+      <h4>Task 5 — Final Review and Reporting</h4>
+      <ul>
+        <li>Completed final review of the AI Q&A tool project and confirmed the pipeline flow.</li>
+        <li>Checked that the YML schema, SQL generation, Snowflake execution, and HTML chart all work together.</li>
+        <li>Prepared the final report-style summary for the completed work.</li>
+        <li><span class="client">Working on Client Project</span> as part of the last-day review and wrap-up.</li>
+      </ul>
+    </div>
   </section>
 
  <footer>
